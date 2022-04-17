@@ -1,0 +1,14 @@
+.header {
+  background-color: $half-dark-main;
+
+  .header__container {
+    display: flex;
+    justify-content: center;
+  }
+  .header__text {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $gray-main;
+    padding: 1rem 0;
+  }
+}

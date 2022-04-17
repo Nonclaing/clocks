@@ -1,0 +1,93 @@
+.clocks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &>*:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  .clocks__title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: $dark-blue-main;
+    text-align: center;
+  }
+
+  .clocks__body {
+    position: relative;
+    background-color: $half-dark-main;
+    border-radius: 100%;
+    width: 20rem;
+    height: 20rem;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url("~/src/assets/icons/clocks1.png") 0 0 no-repeat;
+      background-size: contain;
+
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 100%;
+      background-color: $gray-main;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .clocks__minute, .clocks__hour, .clocks__second {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(0, -50%);
+      border-radius: 1rem;
+      transform-origin: 0 50%;
+    }
+    .clocks__hour {
+      background-color: $gray-main;
+      width: 4rem;
+      height: 0.5rem;
+    }
+    .clocks__minute {
+      background-color: #42b983;
+      width: 6rem;
+      height: 0.4rem;
+    }
+
+    .clocks__second {
+      left: 39.5%;
+      transform-origin: 30% 50%;
+      background-color: $light-blue-main;
+      width: 7rem;
+      height: 0.2rem;разных странах онлайн
+    }
+  }
+
+  .clocks__control {
+    display: flex;
+    &>*:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+
+  .clocks__select {
+    font-size: 2rem;
+    option {
+
+    }
+  }
+
+  .clocks__refresh {
+    a {
+      cursor: pointer;
+      padding: 1rem 1.5rem;
+      border-radius: 1.5rem;
+      background-color: $half-dark-main;
+      color: $gray-main;
+      font-size: 2rem;
+    }
+  }
+}

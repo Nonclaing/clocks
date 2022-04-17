@@ -1,0 +1,19 @@
+/* Error: expected "{".
+ *    ,
+ * 65 |       height: 0.2rem;разных странах онлайн
+ *    |                                           ^
+ *    '
+ *   components\clock.scss 65:43     @import
+ *   components\components.scss 3:9  @import
+ *   main.scss 4:9                   root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a    \2577 \a 65 \2502        height: 0.2rem;\440 \430 \437 \43d \44b \445  \441 \442 \440 \430 \43d \430 \445  \43e \43d \43b \430 \439 \43d \d\a    \2502                                            ^\a    \2575 \a   components\\clock.scss 65:43     @import\a   components\\components.scss 3:9  @import\a   main.scss 4:9                   root stylesheet';
+}

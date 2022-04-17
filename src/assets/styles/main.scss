@@ -1,0 +1,45 @@
+@import "utils/fonts";
+@import "utils/yars";
+@import "utils/rest";
+@import "components/components";
+
+body, html {
+  font-family: "Playfair Display", serif;
+  font-size: 62.5%;
+  font-weight: 400;
+  width: 100%;
+  height: 100%;
+}
+#app {
+  width: 100%;
+  height: 100%;
+  background-color: $dark-main;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .wrapper__content {
+    flex: 1 1 100%;
+    height: 100%;
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 122rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.example {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

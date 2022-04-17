@@ -1,30 +1,29 @@
-<template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+ <template>
+   <div class="wrapper">
+    <v-header/>
+     <div class="wrapper__content">
+       <div class="container">
+         <div class="example">
+           <clock/>
+         </div>
+       </div>
+     </div>
+     <v-footer/>
+   </div>
 </template>
 
+ <script lang="ts">
+ import HelloWorld from "@/components/HelloWorld.vue";
+ import Clock from "@/components/Clock.vue";
+ import VHeader from "@/components/Header.vue";
+ import VFooter from "@/components/Footer.vue";
+ export default {
+   components: {VFooter, VHeader, Clock, HelloWorld },
+   setup() {
+
+   }
+ }
+ </script>
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+  @import "assets/styles/main";
 </style>

@@ -1,0 +1,14 @@
+.footer {
+  background-color: $half-dark-main;
+  .footer__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__text {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem 0;
+    color: $gray-main;
+  }
+}
