@@ -1,5 +1,7 @@
 # clocks
 
+Github pages  https://nonclaing.github.io/clocks/
+
 ## Project setup
 ```
 npm install
@@ -16,4 +18,3 @@ npm run build
 ```
 
 ### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
